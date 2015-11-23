@@ -1,0 +1,38 @@
+vbell off
+
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%{.kB}%-w%{..M}%n %t%{-}%+w %=%{..B} %H(%l) %{..B} %Y/%m/%d %c:%s "
+
+startup_message off
+autodetach on
+defscrollback 1000
+
+caption splitonly
+caption string "%?%F%{WB}%?%3n %t%?[%h]%?%=%l"
+
+#chdir /var/guzheng/work/wlqxz/server
+
+shelltitle "trem"
+
+bindkey "^[;" screen
+bindkey "^[," prev
+bindkey "^[." next
+bindkey "^[m" other
+bindkey "^[`" select 0
+bindkey "^[1" select 1
+bindkey "^[2" select 2
+bindkey "^[3" select 3
+bindkey "^[4" select 4
+bindkey "^[5" select 5
+bindkey "^[6" select 6
+bindkey "^[7" select 7
+bindkey "^[8" select 8
+bindkey "^[9" select 9
+bindkey "^[0" select 10
+bindkey "^[-" select 11
+bindkey "^[=" select 12
+shell -$SHELL
+
+defencoding UTF-8
+encoding UTF-8 UTF-8
